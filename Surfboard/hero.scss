@@ -1,12 +1,40 @@
 .hero{
-    height: 652px;
-    width: 1100px;
+    background: $blue;
+    height: 100vh;
+    min-width: rem(650px);
     color: #fff;
     position: relative;
+
+    @include tablets{
+        display: none;
+        background-position: right botton 88%;
+    }
+
+    &before, &after{
+        @include tablets{
+            display: none;
+        }
+    }
 }
 
 .hero__title-section{
     width: 46%;
+
+    @include tablets{
+        width:100%;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.hero__icons-section{
+    @include tablets{
+        display: none;
+    }
 }
 
 .hero__container{
@@ -14,21 +42,27 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 28px 79px 64px;
+    width: 100%;
+    padding: rem(20px 79px 64px 20px);
     background: url("./img/decor/arnaud.png")center no-repeat;
 }
 
 .hero__main-title{
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-top: rem(40px);
     text-transform: uppercase;
 }
 
 .hero__title-desc{
-    font-size: 21px;
-    margin-bottom: 28px;
+    font-size: rem(21px);
+    margin-bottom: rem(40px);
+    margin-top: rem(28px);
     padding-right: 10%;
+
+    @include tablets{
+        padding: 30%;
+    }
 }
 

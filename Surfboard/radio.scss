@@ -2,6 +2,12 @@
     display: flex;
     cursor: pointer;
     user-select: none;
+    align-items: center;
+    margin-right: rem(22px);
+
+    @include phones{
+        margin-bottom: rem(10px);
+    }
 
     &--checkbox{
         .radio__visible{
@@ -54,4 +60,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+.radio__title{
+    margin-left: 15px;
 }

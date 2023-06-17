@@ -1,29 +1,31 @@
 .section{
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-&--font-color--green{
-    color: #fff;
-}
-}
-    .section__title{
-        color: inherit;
-    }
-
+    &--font-color--green{
+        color: #fff;
 
 .section__title{
-    font-size: 48px;
+        color: inherit;
+      }
+    }
+}
+
+.section__title{
+    font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: rem(10px);
+    margin-top: 66px;
     text-align: center;
     text-transform: uppercase;
     color: #292929;
 }
 
 .section--font-color--green{
-    background: url(./img/decor/cta.png) no-repeat;
+    height: 100vh;
+    background: url(./img/decor/cta.jpg) center no-repeat;
     
 }

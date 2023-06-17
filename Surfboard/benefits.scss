@@ -1,16 +1,27 @@
 .benefits{
     display: flex;
+    padding: rem(30px 50px 30px 54px);
+    
+    @include phones{
+        flex-direction: column;
+    }
 }
 
 .benefits__item{
     flex: 1;
     padding: 0 3%;
     position: relative;
+    padding-bottom: rem(45px);
+   
+    @include phones{
+        padding: 0;
+        margin-bottom: rem(19px);
+    }
     
     &:before{
         content: url(./img/decor/separator.png);
         position: absolute;
-        top: 30px;
+        top: rem(50px);
         right: 0;
         transform: translateX(50%) ;
         color: #DADADA;
