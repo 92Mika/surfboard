@@ -1,6 +1,6 @@
 .benefits{
     display: flex;
-    padding: rem(30px 50px 30px 54px);
+    padding: rem(30px) rem(50px) rem(30px) rem(54px);
     
     @include phones{
         flex-direction: column;
@@ -13,26 +13,26 @@
     position: relative;
     padding-bottom: rem(45px);
    
-    @include phones{
-        padding: 0;
+    @include phones {
+        padding: rem(0px);
         margin-bottom: rem(19px);
     }
     
-    &:before{
+    &:before {
         content: url(./img/decor/separator.png);
         position: absolute;
         top: rem(50px);
-        right: 0;
+        right: rem(0px);
         transform: translateX(50%) ;
         color: #DADADA;
     }
 
     &:first-child{
-        padding-left: 0;
+        padding-left: rem(0px);
     }
     
     &:last-child{
-        padding-right: 0;
+        padding-right: rem(0px);
 
     &:before{
         display: none;

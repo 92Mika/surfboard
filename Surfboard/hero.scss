@@ -7,10 +7,10 @@
 
     @include tablets{
         display: none;
-        background-position: right botton 88%;
+        background-position: right bottom 88%;
     }
 
-    &before, &after{
+    &:before, &:after{
         @include tablets{
             display: none;
         }
@@ -43,8 +43,12 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    padding: rem(20px 79px 64px 20px);
-    background: url("./img/decor/arnaud.png")center no-repeat;
+    padding: rem(20px) rem(79px) rem(64px) rem(20px);
+
+    @media screen and (min-width: 768px) {
+        background: url("./img/decor/arnaud.png")center no-repeat;
+    }
+
 }
 
 .hero__main-title{
@@ -62,7 +66,11 @@
     padding-right: 10%;
 
     @include tablets{
-        padding: 30%;
+        padding: 25%;
     }
+
+    @include phones{
+        padding: 0 16%;
 }
 
+}

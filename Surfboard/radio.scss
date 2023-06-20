@@ -35,23 +35,23 @@
 .radio__elem{
     display: none;
 &:checked ~ .radio__visible{
-    &::before{
+    &:before{
         display: block;
     }
 }
 }
 
 .radio__visible{
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     position: relative;
     border-radius: 50%;
     background: #fff;
 
-    &::before{
+    &:before{
         content: "";
-        width: 10px;
-        height: 8px;
+        width: rem(10px);
+        height: rem(8px);
         background: #FEDB3f;
         border-radius: 50%;
         position: absolute;
@@ -63,5 +63,5 @@
 }
 
 .radio__title{
-    margin-left: 15px;
+    margin-left: rem(15px);
 }
