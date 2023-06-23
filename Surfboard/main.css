@@ -436,19 +436,7 @@ img {
     display: none;
   }
 }
-.benefits__item:first-child {
-  padding-left: 0rem;
-}
-.benefits__item:last-child {
-  padding-right: 0rem;
-  margin-bottom: 1.0555555556rem;
-}
-@media screen and (max-width: 480px) {
-  .benefits__item:last-child {
-    margin-bottom: 0rem;
-  }
-}
-.benefits__item:before {
+.benefits__item:last-child:before {
   display: none;
 }
 
