@@ -9,13 +9,11 @@
 .benefits{
     display: flex;
     padding: rem(30px) rem(50px) rem(30px) rem(54px);
-      
     @include phones{
         flex-direction: column;
         padding-left: 0px;
         padding-top: 60px;
     }
-
 }
 
 .benefits__item{
@@ -23,8 +21,8 @@
     position: relative;
     padding-bottom: rem(60px);
     padding-left: rem(20px);
-   
-     
+    
+       
     &:before{
         content: url(./img/decor/separator.png);
         position: absolute;
@@ -32,27 +30,19 @@
         right: rem(0px);
         transform: translateX(50%) ;
         color: #DADADA;
-
-        @include tablets {
-            display: none;
-        }
-    }
-
-    &:first-child{
-        padding-left: rem(0px);
-    }
-    
-    &:last-child{
-        padding-right: rem(0px);
-        margin-bottom: rem(19px);
-        @include phones{
-            margin-bottom: rem(0px);
-            }
-        }
-
-    &:before{
+     @include tablets{
         display: none;
+     }
     }
+     &:last-child{
+       &:before{
+        display: none;
+       }
+     }
+
         }
+     
+    
+    
 
     
