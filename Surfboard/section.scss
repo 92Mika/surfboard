@@ -17,15 +17,33 @@
 .section__title{
     font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: rem(25px);
-    margin-top: rem(66px);
+    margin-bottom: rem(15px);
+    margin-top: rem(80px);
     text-align: center;
     text-transform: uppercase;
     color: #292929;
+
+    @include tablets{
+        margin-top: rem(0px);
+    }
 }
 
 .section--font-color--green{
     height: 100vh;
     background: url(./img/decor/cta.jpg) center no-repeat;
+    position: relative;
+    background-size: cover;
+
+    @include tablets{
+        height: 1000px;
+        width: 768px;
+        background-position: center;
+    }
+
+    @include phones{
+        width: 480px;
+    }
+
+    
     
 }
