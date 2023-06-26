@@ -14,9 +14,11 @@
 .headline__subtitle{
     padding-left: rem(259px);
     padding-right: rem(243px);
+    
 @include tablets{
     padding-left: rem(0px);
     padding-right: rem(0px);
+    text-align: center;
     }
 @include phones{
     padding: 0 5%;

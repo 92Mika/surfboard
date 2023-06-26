@@ -1,7 +1,5 @@
 .reviews-section{
     @include tablets{
-        width: rem(768px);
-        height: rem(976px);
     }
     @include phones{
         width: rem(480px);
@@ -42,7 +40,6 @@
 
 .reviews__content{
     flex: 1;
-    margin-left: rem(37px);
 }
 
 .reviews__title{

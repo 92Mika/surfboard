@@ -11,8 +11,9 @@
     padding: rem(30px) rem(50px) rem(30px) rem(54px);
     @include phones{
         flex-direction: column;
-        padding-left: 0px;
-        padding-top: 60px;
+        padding-left: rem(20px);    
+        padding-top: rem(60px);
+
     }
 }
 
@@ -20,7 +21,6 @@
     flex: 1;
     position: relative;
     padding-bottom: rem(60px);
-    padding-left: rem(20px);
     
        
     &:before{
@@ -32,15 +32,23 @@
         color: #DADADA;
      @include tablets{
         display: none;
-     }
-    }
-     &:last-child{
-       &:before{
-        display: none;
-       }
-     }
-
         }
+     }
+    &:first-child{
+        padding-left: 0;
+     }
+    &:last-child{
+    &:before{
+        display: none;
+        }
+     }
+     @include phones{
+        &:last-child{
+            padding-bottom: rem(0px);
+
+     }
+}
+}
      
     
     
