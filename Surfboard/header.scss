@@ -26,6 +26,7 @@
 
 .phone-number__icon{
     display: inline-block;
+    flex-shrink: 0;
 }
 
 .phone-number__icon-elem{
@@ -36,4 +37,5 @@
 
 .phone-number__text{
     display: flex;
+    white-space: nowrap;
 }

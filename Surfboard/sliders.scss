@@ -1,0 +1,174 @@
+.slides__display{
+    background: #f8faf9;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+}
+
+.slides__display-inner{
+    padding: 42px 42px 42px 79px;  
+    display: flex;
+    position: relative;
+}
+  
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    user-select: none;
+    &:hover{
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    } 
+  }
+
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    user-select: none;
+    position: absolute;
+    right: 0;
+    &:hover{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    }
+  }
+   
+  
+ 
+.slides__avatar{
+    position: absolute;
+}
+
+.slider__arrow{
+    display: inline-flex;
+}
+
+.slides__avatar-img{
+    width: 396px;
+    height: 378px;
+    flex-shrink: 0;
+    color: #ECECEC;    
+}
+
+.slides__content{
+    flex: 1;
+    width: 374px;
+    height: 329px;
+}
+
+.pmtrsbtn{
+    color:#FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    width: 91px;
+    height: 91px;
+    background: #3A587E;
+    border-radius: 4px; 
+    cursor: pointer;
+    border: none;
+    &:hover, &:focus {
+    background-color: #2980B9;
+    }
+}
+
+.slide__arrow-img{
+    padding-left: 19px;
+    padding-bottom: 7px;
+}
+
+.slides__parameters{
+    margin-top: 60px;
+    position: absolute;
+    display: flex;
+    & a:hover {
+        background-color: #ddd;
+    }
+    &.show {
+        display: block;
+    }
+}
+
+.parametres__content{
+    font-size: 16px;
+    background: #ddd;
+    min-width: 160px;
+    overflow: auto;
+    text-decoration: none;
+    width: 280px;
+    height: 290px;
+    box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+    }
+
+.parametres__content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.board{
+    justify-content: space-between;
+}
+
+.slides{
+    font-size: 36px;
+    font-family: Alegreya Sans;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.slides__display{
+    font-size: rem(30px);
+    margin-bottom: rem(14px);
+    margin-top: rem(20px);
+    color:black;
+    display: flex;
+    height:642px;
+}
+
+.slides__text{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Alegreya Sans;
+}
+    
+.wood__cost{
+    justify-content: space-between;
+    display: flex;
+    width: 300px;
+    margin-top: 24px; 
+}
+
+.wood__title{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wood__btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.wood__price{
+    font-size: 60px;
+}
+
+
+                                
+                            
+                        
+        
